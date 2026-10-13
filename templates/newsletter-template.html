@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{TITLE}}</title>
+</head>
+<body style="margin:0;padding:0;background:#f4f4f4;">
+<div style="display:none;max-height:0;overflow:hidden;">{{PREHEADER}}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f4;"><tr><td align="center" style="padding:20px 10px;">
+<table role="presentation" width="640" cellpadding="0" cellspacing="0" style="width:100%;max-width:640px;background:#ffffff;font-family:Inter,Helvetica,Arial,sans-serif;font-weight:300;color:#2d2d2d;">
+
+<tr><td align="center" style="padding:26px 20px 18px;border-bottom:1px solid #ddd;">
+<a href="https://evehairinc.com"><img src="https://cdn.shopify.com/s/files/1/0432/6477/0202/files/eve_logo-copy_5c2e1ab7-3676-41ae-aa52-ba7012e3f4e3.png?v=1614322156" width="200" alt="Eve Hair" style="display:block;border:0;width:200px;height:auto;"></a>
+</td></tr>
+<tr><td align="center" style="padding:14px 10px;border-bottom:1px solid #ddd;font-family:Jost,'Century Gothic',Futura,Arial,sans-serif;text-transform:uppercase;letter-spacing:2.5px;font-weight:400;color:#2d2d2d;font-size:13px;">
+<a href="https://evehairinc.com" style="color:#2d2d2d;text-decoration:none;">New</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://evehairinc.com" style="color:#2d2d2d;text-decoration:none;">Weaves</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://evehairinc.com" style="color:#2d2d2d;text-decoration:none;">Hair Pieces</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://evehairinc.com" style="color:#2d2d2d;text-decoration:none;">Braids</a>
+</td></tr>
+
+<!-- BLOCK intro (required, once) -->
+<tr><td style="padding:30px 32px 14px;font-size:15px;line-height:1.5;">
+<p style="margin:0;">{{INTRO}}</p>
+</td></tr>
+<!-- END intro -->
+
+<!-- BLOCK hero-image (optional, full width; repeatable anywhere) -->
+<tr><td><img src="{{IMG_URL}}" width="640" alt="{{IMG_ALT}}" style="display:block;width:100%;height:auto;border:0;"></td></tr>
+<!-- END hero-image -->
+
+<!-- BLOCK product (repeat once per product) -->
+<tr><td style="padding:30px 32px 10px;">
+<div style="font-family:Jost,'Century Gothic',Futura,Arial,sans-serif;text-transform:uppercase;letter-spacing:2.5px;font-weight:400;color:#2d2d2d;font-size:12px;color:#8e8e8e;">{{EYEBROW}}</div>
+<h1 style="font-family:Jost,'Century Gothic',Futura,Arial,sans-serif;text-transform:uppercase;letter-spacing:2.5px;font-weight:400;color:#2d2d2d;font-size:22px;line-height:1.2;margin:8px 0 12px;">{{PRODUCT_NAME}}</h1>
+<p style="margin:0;font-size:15px;line-height:1.5;">{{PRODUCT_COPY}}</p>
+</td></tr>
+<tr><td style="padding-top:16px;"><img src="{{IMG_URL}}" width="640" alt="{{IMG_ALT}}" style="display:block;width:100%;height:auto;border:0;"></td></tr>
+<!-- END product -->
+
+<!-- BLOCK sku-table (optional, after a product; add or drop columns, keep header row style) -->
+<tr><td style="padding:20px 32px 6px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="font-size:14px;border-collapse:collapse;border:1px solid #ddd;">
+<tr style="background:#f4e9da;font-family:Jost,'Century Gothic',Futura,Arial,sans-serif;text-transform:uppercase;letter-spacing:2.5px;font-weight:400;color:#2d2d2d;font-size:12px;"><td style="padding:10px;">Style</td><td style="padding:10px;">Length</td><td style="padding:10px;">Color</td><td style="padding:10px;" align="right">Wholesale</td></tr>
+<tr><td style="padding:10px;border-bottom:1px solid #ddd;">{{SKU}}</td><td style="padding:10px;border-bottom:1px solid #ddd;">{{LENGTH}}</td><td style="padding:10px;border-bottom:1px solid #ddd;">{{COLOR}}</td><td style="padding:10px;border-bottom:1px solid #ddd;" align="right">{{PRICE}}</td></tr>
+<tr><td style="padding:10px;">{{SKU}}</td><td style="padding:10px;">{{LENGTH}}</td><td style="padding:10px;">{{COLOR}}</td><td style="padding:10px;" align="right">{{PRICE}}</td></tr>
+</table>
+</td></tr>
+<!-- END sku-table (last row has no border-bottom) -->
+
+<!-- BLOCK spec-lines (optional, alternative to sku-table) -->
+<tr><td style="padding:18px 32px 6px;font-size:15px;line-height:1.5;">
+<p style="margin:0 0 8px;"><b style="font-weight:500;">Lengths:</b> {{LENGTHS}}</p>
+<p style="margin:0 0 8px;"><b style="font-weight:500;">Colors:</b> {{COLORS}}</p>
+<p style="margin:0;"><b style="font-weight:500;">Arrival:</b> {{ARRIVAL}} &nbsp;|&nbsp; <b style="font-weight:500;">Wholesale:</b> {{PRICE}}</p>
+</td></tr>
+<!-- END spec-lines -->
+
+<!-- BLOCK divider (between products) -->
+<tr><td style="padding:30px 32px 0;"><div style="border-top:1px solid #ddd;"></div></td></tr>
+<!-- END divider -->
+
+<!-- BLOCK cta (required, once, before footer) -->
+<tr><td align="center" style="padding:32px 32px 30px;font-size:15px;line-height:1.5;">
+<p style="margin:0 0 20px;text-align:left;">{{CLOSING_ASK}}</p>
+<a href="mailto:hcho@evehairinc.com?subject={{CTA_SUBJECT_URLENCODED}}&amp;body=Styles%2C%20colors%20and%20quantities%3A%0A" style="display:inline-block;background:#2d2d2d;color:#ffffff;text-decoration:none;padding:14px 34px;font-family:Jost,'Century Gothic',Futura,Arial,sans-serif;font-size:13px;letter-spacing:2px;text-transform:uppercase;">{{CTA_LABEL}}</a>
+</td></tr>
+<!-- END cta -->
+
+<tr><td align="center" style="padding:26px 20px 28px;border-top:1px solid #ddd;font-size:12px;line-height:1.8;color:#6b6b6b;">
+<div style="font-family:Jost,'Century Gothic',Futura,Arial,sans-serif;text-transform:uppercase;letter-spacing:2.5px;font-weight:400;color:#2d2d2d;font-size:12px;margin-bottom:8px;">Contact &amp; Support</div>
+Toll free 1.800.472.9720 | <a href="https://evehairinc.com" style="color:#2d2d2d;">evehairinc.com</a><br>
+<a href="https://www.facebook.com/Evehairinc" style="color:#2d2d2d;">Facebook</a> &nbsp;|&nbsp; <a href="https://www.instagram.com/evehairinc" style="color:#2d2d2d;">Instagram</a> &nbsp;|&nbsp; <a href="https://www.tiktok.com/@evehairinc" style="color:#2d2d2d;">TikTok</a> &nbsp;|&nbsp; <a href="https://www.youtube.com/@eve-hair" style="color:#2d2d2d;">YouTube</a>
+<div style="margin-top:10px;font-size:11px;color:#8e8e8e;">&copy; {{YEAR}} EVE HAIR INC. 3935 Paramount Blvd, Lakewood, CA 90712. Reply with "unsubscribe" and I will take you off this list.</div>
+</td></tr>
+</table></td></tr></table></body></html>
